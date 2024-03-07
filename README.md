@@ -1,0 +1,1 @@
+Wikiguessr is a game built in React, NextJS, and PostgreSQL. You will be given an excerpt from a Wikipedia page of a famous person. Your job is to guess which person the excerpt refers to.
