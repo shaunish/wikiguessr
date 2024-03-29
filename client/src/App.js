@@ -141,11 +141,11 @@ class Game extends React.Component {
           {this.state.introShow ? (
             <>
             <h1>
-              <p class="Home_title__2uykl">Welcome to Wikiguessr! </p>
+              <p class="title">Welcome to Wikiguessr! </p>
             </h1>
-            <div className="Home_container__mxz0c">
-            <button className="Home_card__1NENW" onClick={this.beginGame}> BEGIN! </button>
-              <Popup trigger={<button className="Home_card__1NENW"> How To Play</button>}>
+            <div className="container">
+            <button className="card" onClick={this.beginGame}> BEGIN! </button>
+              <Popup trigger={<button className="card"> How To Play</button>}>
               <span>How To Play: You will be given an excerpt from the Wikipedia page of a famous person. Your job is to figure out whose page it comes from.</span>
               </Popup>
             </div>
@@ -153,19 +153,19 @@ class Game extends React.Component {
             </>
           ) : (
             <div>
-              <h1 className="Home_quote__DTcNZ">{this.state.questionState}</h1>
+              <h1 className="quote">{this.state.questionState}</h1>
               <div>
 
 
-                      <button  className="Home_card__1NENW" onClick={() => this.handleButtonClick(this.state.answer0)} value={this.state.answer0}><h3>{this.state.answer0}</h3></button>
+                      <button  className="card" onClick={() => this.handleButtonClick(this.state.answer0)} value={this.state.answer0}><h3>{this.state.answer0}</h3></button>
 
-                        <button  className="Home_card__1NENW" onClick={() => this.handleButtonClick(this.state.answer1)} value={this.state.answer1}><h3>{this.state.answer1}</h3></button>
+                        <button  className="card" onClick={() => this.handleButtonClick(this.state.answer1)} value={this.state.answer1}><h3>{this.state.answer1}</h3></button>
               </div>
               <div>
 
-                        <button  className="Home_card__1NENW" onClick={() => this.handleButtonClick(this.state.answer2)} value={this.state.answer2}><h3>{this.state.answer2}</h3></button>
+                        <button  className="card" onClick={() => this.handleButtonClick(this.state.answer2)} value={this.state.answer2}><h3>{this.state.answer2}</h3></button>
 
-                        <button  className="Home_card__1NENW" onClick={() => this.handleButtonClick(this.state.answer3)} value={this.state.answer3}><h3>{this.state.answer3}</h3></button>
+                        <button  className="card" onClick={() => this.handleButtonClick(this.state.answer3)} value={this.state.answer3}><h3>{this.state.answer3}</h3></button>
               </div>
 
 
@@ -173,12 +173,12 @@ class Game extends React.Component {
                 this.state.correctAnswerClicked ? (
                   <div>
                     <h3>Correct!!! &#x1F525; &#x1F525; &#x1F525;</h3>
-                    <button className="Home_card__1NENW" onClick={this.handleNextButtonClick}>Next Question</button>
+                    <button className="card" onClick={this.handleNextButtonClick}>Next Question</button>
                   </div>
                 ) : (
                   <div>
                     <h3>Aww, sad! The correct answer was {this.state.correctAnswerState}. You put {this.state.test}</h3>
-                    <button className="Home_card__1NENW" onClick={this.handleNextButtonClick}>Next Question</button>
+                    <button className="card" onClick={this.handleNextButtonClick}>Next Question</button>
                   </div>
                 )
               ) : null}
