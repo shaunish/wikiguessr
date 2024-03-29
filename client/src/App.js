@@ -141,7 +141,7 @@ class Game extends React.Component {
           {this.state.introShow ? (
             <>
             <h1>
-              <p class="title">Welcome to Wikiguessr! </p>
+              <p className="title">Welcome to Wikiguessr! </p>
             </h1>
             <div className="container">
             <button className="card" onClick={this.beginGame}> BEGIN! </button>
