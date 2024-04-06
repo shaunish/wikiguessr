@@ -140,7 +140,7 @@ class Game extends React.Component {
         <div>
           {this.state.introShow ? (
             <>
-            <h1 class="title">
+            <h1 className="title">
              Welcome to Wikiguessr! 
             </h1>
             <div className="container">
